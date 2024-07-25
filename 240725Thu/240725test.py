@@ -19,34 +19,41 @@
 
 #hw_8_4
 # 아래 클래스를 수정하시오. (이름을 입력안해도 출력이 된다<<고쳐야함)
-# class UserInfo:
+class UserInfo:
 
-#     def __init__(self):
-#         self.user_data = {}
-        
-
-#     def get_user_info(self):
-#         try:
-#             name = str(input('이름을 입력하세요: '))
-#             age = int(input('나이를 입력하세요: '))
-#             self.user_data['name'] = name
-#             self.user_data['age'] = age
+    def __init__(self):
+        self.user_data = {}
+    
+    def get_user_info(self):
+        try:
+            name = str(input('이름을 입력하세요: '))
+            age = int(input('나이를 입력하세요: '))
+            self.user_data['name'] = name
+            self.user_data['age'] = age
             
-#         except ValueError:
-#             print('나이는 숫자로 입력해야 합니다.')
+        except ValueError:
+            print('나이는 숫자로 입력해야 합니다.')
 
-#     def display_user_info(self):
-#         if 'name' in self.user_data and 'age' in self.user_data:
-#             print('사용자 정보:')
-#             print(f'이름: {self.user_data["name"]}')
-#             print(f'나이: {self.user_data["age"]}')
-#         else:
-#             print('사용자 정보가 입력되지 않았습니다.')
+    def display_user_info(self):
+        try:
+            self.user_data.get('name')[0] #이름을 입력 안했을 때
+            print('사용자 정보:')
+            print(f'이름: {self.user_data["name"]}')
+            print(f'나이: {self.user_data["age"]}')
+        except:
+            print('사용자 정보가 입력되지 않았습니다.')
 
+    # def display_user_info(self):
+    #     if 'name' in self.user_data and 'age' in self.user_data:
+    #         print('사용자 정보:')
+    #         print(f'이름: {self.user_data["name"]}')
+    #         print(f'나이: {self.user_data["age"]}')
+    #     else:
+    #         print('사용자 정보가 입력되지 않았습니다.')
 
-# user = UserInfo()
-# user.get_user_info()
-# user.display_user_info()
+user = UserInfo()
+user.get_user_info()
+user.display_user_info()
 
 
 #hw_8_1
@@ -261,45 +268,45 @@
 
 
 #ws_8_c
-class BaseModel:
-    PK = 1
-    TYPE = 'Basic Model'
+# class BaseModel:
+#     PK = 1
+#     TYPE = 'Basic Model'
 
-    def __init__(self, data_type, title, content, created_at, updated_at):
-        self.PK = BaseModel.PK
-        self.data_type = data_type 
-        self.title = title 
-        self.content = content 
-        self.created_at = created_at 
-        self.updated_at = updated_at
-        BaseModel.PK += 1
+#     def __init__(self, data_type, title, content, created_at, updated_at):
+#         self.PK = BaseModel.PK
+#         self.data_type = data_type 
+#         self.title = title 
+#         self.content = content 
+#         self.created_at = created_at 
+#         self.updated_at = updated_at
+#         BaseModel.PK += 1
     
-    def save(self):
-        print('데이터를 저장합니다.')
+#     def save(self):
+#         print('데이터를 저장합니다.')
 
-class Novel(BaseModel):
-    def __init__(self, data_type, title, content, created_at, updated_at, author):
-        super().__init__(data_type, title, content, created_at, updated_at)
-        self.author = author
+# class Novel(BaseModel):
+#     def __init__(self, data_type, title, content, created_at, updated_at, author):
+#         super().__init__(data_type, title, content, created_at, updated_at)
+#         self.author = author
     
-class Other(BaseModel):
-    TYPE = 'OtherModel'
+# class Other(BaseModel):
+#     TYPE = 'OtherModel'
 
-    def save(self):
-        print('데이터를 다른 장소에 저장합니다.')
+#     def save(self):
+#         print('데이터를 다른 장소에 저장합니다.')
 
-class ExtendedModel(Novel, Other):
+# class ExtendedModel(Novel, Other):
 
-    def __init__(self, extended_type):
-        self.extended_type = extended_type
+#     def __init__(self, extended_type):
+#         self.extended_type = extended_type
 
-    def display_info(self):
-        print('ExtendedModel 인스턴스의 정보 출력 및 저장 메서드 호출')
-        print(f'PK: {super().PK}, TYPE: {super().TYPE}, Extended Type: {self.extended_type}')
+#     def display_info(self):
+#         print('ExtendedModel 인스턴스의 정보 출력 및 저장 메서드 호출')
+#         print(f'PK: {super().PK}, TYPE: {super().TYPE}, Extended Type: {self.extended_type}')
 
-    def save(self):
-        print('데이터를 확장해서 저장합니다.')
+#     def save(self):
+#         print('데이터를 확장해서 저장합니다.')
 
-extended_instance = ExtendedModel('Extended Type')
-extended_instance.display_info()
-extended_instance.save()
+# extended_instance = ExtendedModel('Extended Type')
+# extended_instance.display_info()
+# extended_instance.save()
