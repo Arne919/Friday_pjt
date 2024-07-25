@@ -298,3 +298,44 @@ black_list = [
     'White, Andrade and Howard',
     'Warren-Stewart',
 ]
+
+def create_user(data):
+    user_list=[]
+    count = 0
+    for user in data:
+        result=is_validation(user)
+
+    # print(result)
+        if isinstance(result, tuple):
+            count +=1
+            print(result[1])
+            for key in result[1] :
+                user[key]='None'
+            user_list.append(user)
+        elif result== 'blocked':
+            count +=1
+        else:
+            user_list.append(user)
+    print(f'잘못된 데이터로 구성된 유저의 수는 {count}입니다.')
+    return user_list
+def is_validation(data):
+    is_list=[]
+    for key in data:
+        if key == 'blood_group' and data['blood_group'] not in blood_types:
+            is_list.append('blood_group')
+        elif key == 'company' and data['company'] in black_list:
+            return 'blocked'
+        elif key == 'mail' and '@' not in data['mail']:
+            is_list.append('mail')
+        elif key == 'name' and len(data['name']) < 2 and len(data['name']) > 30:
+            is_list.append('name')
+        elif key == 'website' and len(data['website']) ==0:
+            is_list.append('website')
+    if len(is_list) > 0:
+        return False, is_list
+    else:
+        return True    
+
+result=create_user(user_data) #수정한 user_list
+for r in result: # 한줄씩 출력
+    print(r)
