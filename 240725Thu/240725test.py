@@ -298,7 +298,7 @@ user.display_user_info()
 # class ExtendedModel(Novel, Other):
 
 #     def __init__(self, extended_type):
-#         self.extended_type = extended_type
+#         self.extended_type = extended_type # 'Extended Type'
 
 #     def display_info(self):
 #         print('ExtendedModel 인스턴스의 정보 출력 및 저장 메서드 호출')
@@ -307,6 +307,6 @@ user.display_user_info()
 #     def save(self):
 #         print('데이터를 확장해서 저장합니다.')
 
-# extended_instance = ExtendedModel('Extended Type')
+# extended_instance = ExtendedModel('Extended Type') #()
 # extended_instance.display_info()
 # extended_instance.save()
