@@ -31,7 +31,8 @@ authors = [
     '임제',
     '임제',
 ]
-print(set(authors))
+set1 = list(set(authors))
+print(set1)
 
 
 
