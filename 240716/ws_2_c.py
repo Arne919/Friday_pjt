@@ -61,7 +61,7 @@ data = [{'has_more': False,
 # 과목()
 # first_data 출력
 title_content = data[0]['results'][0]['properties']['제목']['title'][0]['text']['content']
-day_number = data[0]['results'][0]['properties']['일차']['number']
+day_number = int(data[0]['results'][0]['properties']['일차']['number'])
 step_number = str(int(data[0]['results'][0]['properties']['단계']['select']['name']))+'단계'
 subject_name = data[0]['results'][0]['properties']['과목']['multi_select'][0]['name']
 first_data = {'제목': title_content, '일차': day_number, '단계': step_number, '과목': subject_name}
