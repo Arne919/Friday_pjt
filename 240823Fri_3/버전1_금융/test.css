@@ -1,0 +1,118 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    margin-bottom: 2rem;
+  }
+  
+  .frontpage {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: #CE7DFF;
+  }
+  
+  .title-container {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .title-container h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
+  .title-container h6 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+  }
+  
+  .title-container hr {
+    border: 2px solid #CE7DFF;
+    width: 50%;
+    margin: 1rem auto;
+  }
+  
+  .btn-pink {
+    background-color: #CE7DFF;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+  }
+  
+  .btn-pink:hover {
+    background-color: #B58BCC;
+  }
+  
+  .about-me {
+    background-color: #CE7DFF;
+  }
+  
+  .about-me img {
+    border-radius: 8px;
+  }
+  
+  .skills, .projects, .contact {
+    background-color: #F8F8F8;
+    padding: 4rem 0;
+  }
+  
+  .skills .card-header, .projects .btn-pink {
+    background-color: #CE7DFF;
+    color: #000000;
+  }
+  
+  .skills .card-header {
+    font-size: 1.25rem;
+  }
+  
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .contact {
+    background-color: #CE7DFF;
+  }
+  
+  .contact .btn-pink {
+    background-color: #CE7DFF;
+    color: #000000;
+  }
+  
+  .contact .btn-pink:hover {
+    background-color: #B58BCC;
+  }
+  
+  footer {
+    background-color: #CE7DFF;
+    padding: 1rem 0;
+    border-top: 1px solid #CE7DFF;
+    color: #000000;
+  }
+  

@@ -1,32 +1,131 @@
 * {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    list-style: none
-  }
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .about-me,
-  .skills,
-  .projects,
-  .contact {
-    height: 800px;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
-  .frontpage {
-    height: 600px;
-    align-items:center;
-    flex: 1;
-  }
+header {
+  margin-bottom: 2rem;
+}
 
-  .skills,
-  .contact {
-    background-color: #f0f0f0;
-  }
+.frontpage {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: #CE7DFF;
+}
 
-  .title-container {
-    padding-left: 10rem;
-    /* padding-top: 10rem; */
-  }
+.title-container {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.title-container h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.title-container h6 {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.title-container hr {
+  border: 2px solid #CE7DFF;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.btn-pink {
+  background-color: #CE7DFF;
+  color: #000000;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+}
+
+.btn-pink:hover {
+  background-color: #B39DDB;
+}
+
+.about-me {
+  background-color: #EDE7F6;
+}
+
+.about-me img {
+  border-radius: 8px;
+}
+
+.skills, .projects, .contact {
+  background-color: #F3E5F5;
+  padding: 4rem 0;
+}
+
+.skills .card-header, .projects .btn-pink {
+  background-color: #CE7DFF;
+  color: #000000;
+}
+
+.skills .card-header {
+  font-size: 1.25rem;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.contact {
+  background-color: #EDE7F6;
+}
+
+.contact .btn-pink {
+  background-color: #D1C4E9;
+  color: #6D6E76;
+}
+
+.contact .btn-pink:hover {
+  background-color: #B39DDB;
+}
+
+footer {
+  background-color: #D1C4E9;
+  padding: 1rem 0;
+  border-top: 1px solid #D1C4E9;
+  color: #6D6E76;
+}
+
+/* Modal button style */
+.btn-primary {
+  background-color: #CE7DFF; /* Pastel purple */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #6A1B9A; /* Darker purple on hover */
+  color: #FFFFFF; /* White text on hover */
+}
+
+
+
