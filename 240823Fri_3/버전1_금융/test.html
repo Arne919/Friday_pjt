@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-heart" style="color: #CE7DFF;"></i> Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
 
   <main id="frontpage" class="frontpage row">
     <nav class="container d-none d-lg-block col-lg-1">
-      <ul class="list-unstyled">
+      <ul class="list-unstyled p-4">
         <li><a href="https://github.com" class="d-block mb-3"><i class="fa-brands fa-github fa-3x" style="color: #CE7DFF;"></i></a></li>
         <li><a href="https://www.instagram.com" class="d-block mb-3"><i class="fa-brands fa-instagram fa-3x" style="color: #CE7DFF;"></i></a></li>
         <li><a href="https://google.com" class="d-block mb-3"><i class="fa-brands fa-google fa-3x" style="color: #CE7DFF;"></i></a></li>
@@ -44,46 +44,47 @@
       <h1>KANG HYE GYEONG</h1>
       <h6>WEB DEVELOPER PORTFOLIO</h6>
       <hr>
-      <ul class="list-unstyled">
-        <li><span>2024</span><span>삼성 청년 소프트웨어 아카데미 (SSAFY) 12기</span></li>
-        <li><span>2024</span><span>이야앗홍</span></li>
-        <li><span>2021</span><span>냐옹냐오옹먕</span></li>
-      </ul><br>
+      <div class="container" style="padding-left: 25%;">
+        <ul class="list-unstyled">
+          <li class="d-flex justify-content-start mb-2">
+            <span class="me-3">2024</span><span>삼성 청년 소프트웨어 아카데미 (SSAFY) 12기</span>
+          </li>
+          <li class="d-flex justify-content-start mb-2">
+            <span class="me-3">2023</span><span>이야앗홍</span>
+          </li>
+          <li class="d-flex justify-content-start mb-2">
+            <span class="me-3">2021</span><span>냐옹냐오옹먕</span>
+          </li>
+        </ul>
+      </div>
+      <br>
       <a href="#contact" class="btn btn-pink">이메일 보내기</a>
     </section>
   </main>
 
-  <section id="about-me" class="about-me">
-    <div class="row no-gutters align-items-center">
-      <div class="col-md-6 d-flex justify-content-center align-items-center" style="padding: 0;">
-        <img src="kuromi.jpg" class="img-fluid" style="object-fit: cover; width: 100%; height: auto;" alt="쿠로미">
+  <section id="about-me" class="about-me text-center py-5">
+    <h2>About Me</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="kuromi.jpg" class="img-fluid" alt="쿠로미">
       </div>
-      <div class="col-md-6 d-flex flex-column justify-content-center p-4" style="background-color: #CE7DFF;">
-        <h1 style="font-size: 2em; margin-bottom: 1em; color: #000000;">About Me</h1>
-        <p style="font-size: 1em; line-height: 1.5; color: #000000;">
-          "나에 대한 소개!~!@~!!@#$ ."
-        </p>
+      <div class="col-md-6 bg-purple text-white">
+        <p>"나에 대한 소개!~!@~!!@#$ ."</p>
         <ul class="list-unstyled">
-          <li class="mb-3">
-            <div>
-              <ul class="list-unstyled">
-                <li class="d-flex align-items-center mb-2">
-                  <span class="me-2"><i class="fa-solid fa-user" style="color: #000000;"></i></span>
-                  <span>Name:</span>
-                  <span>강혜경</span>
-                </li>
-                <li class="d-flex align-items-center mb-2">
-                  <span class="me-2"><i class="fa-solid fa-phone" style="color: #000000;"></i></span>
-                  <span>Phone:</span>
-                  <span>010-5695-6890</span>
-                </li>
-                <li class="d-flex align-items-center mb-2">
-                  <span class="me-2"><i class="fa-solid fa-envelope" style="color: #000000;"></i></span>
-                  <span>Email:</span>
-                  <span>ghgghg96@naver.com</span>
-                </li>
-              </ul>
-            </div>
+          <li class="d-flex align-items-center mb-2">
+            <span class="me-2"><i class="fa-solid fa-user"></i></span>
+            <span>Name: </span>
+            <span> 강혜경</span>
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <span class="me-2"><i class="fa-solid fa-phone"></i></span>
+            <span>Phone: </span>
+            <span> 010-5695-6890</span>
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <span class="me-2"><i class="fa-solid fa-envelope"></i></span>
+            <span>Email: </span>
+            <span> ghgghg96@naver.com</span>
           </li>
         </ul>
       </div>
@@ -97,7 +98,7 @@
         <!-- Frontend Card -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
           <div class="card border-0 shadow-sm">
-            <div class="card-header text-center" style="background-color: #CE7DFF; color: #000000;">
+            <div class="card-header text-center bg-purple text-white">
               <h3 class="card-title">Frontend</h3>
             </div>
             <div class="card-body text-center">
@@ -111,7 +112,7 @@
         <!-- Backend Card -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
           <div class="card border-0 shadow-sm">
-            <div class="card-header text-center" style="background-color: #CE7DFF; color: #000000;">
+            <div class="card-header text-center bg-purple text-white">
               <h3 class="card-title">Backend</h3>
             </div>
             <div class="card-body text-center">
@@ -123,24 +124,28 @@
         <!-- Database Card -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
           <div class="card border-0 shadow-sm">
-            <div class="card-header text-center" style="background-color: #CE7DFF; color: #000000;">
+            <div class="card-header text-center bg-purple text-white">
               <h3 class="card-title">Database</h3>
             </div>
             <div class="card-body text-center">
-              <i class="fa-solid fa-database fa-3x mb-3" style="color: #4F5D73;"></i>
-              <h5 class="card-text">not yet</h5>
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <h5 class="card-text">not yet..</h5>
             </div>
           </div>
         </div>
         <!-- Etc Card -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
           <div class="card border-0 shadow-sm">
-            <div class="card-header text-center" style="background-color: #CE7DFF; color: #000000;">
+            <div class="card-header text-center bg-purple text-white">
               <h3 class="card-title">Etc</h3>
             </div>
             <div class="card-body text-center">
-              <i class="fa-solid fa-cogs fa-3x mb-3" style="color: #6C757D;"></i>
-              <h5 class="card-text">Git, Docker, CI/CD</h5>
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <h5 class="card-text">not yet..</h5>
             </div>
           </div>
         </div>
@@ -150,27 +155,49 @@
 
   <section id="projects" class="projects text-center py-5">
     <h2>Projects</h2>
-    <div class="container">
-      <div class="row">
-        <!-- Sample Project -->
-        <div class="col-md-4 mb-4">
-          <div class="card border-0 shadow-sm">
-            <img src="project1.jpg" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Project Title 1</h5>
-              <p class="card-text">Brief description of the project.</p>
-              <a href="#" class="btn btn-pink">View Project</a>
-            </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="pjt.jpg" class="d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
-        <!-- Add more project cards here -->
+        <div class="carousel-item">
+          <img src="pjt.jpg" class="d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pjt.jpg" class="d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </section>
 
   <section id="contact" class="contact text-center py-5">
     <h2>Contact</h2>
-    <div class="container">
+    <div class="container" style="max-width: 600px;">
       <form>
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
@@ -184,7 +211,25 @@
           <label for="message" class="form-label">Message</label>
           <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
         </div>
-        <button type="submit" class="btn btn-pink">Send Message</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          이메일 보내기
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>감사합니다!</strong></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                이메일을 성공적으로 보냈습니다.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
     </div>
   </section>

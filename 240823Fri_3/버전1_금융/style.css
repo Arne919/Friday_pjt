@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
@@ -12,9 +13,12 @@ body {
 }
 
 header {
-  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
+/* Frontpage Styles */
 .frontpage {
   height: 600px;
   display: flex;
@@ -56,6 +60,7 @@ header {
   background-color: #B39DDB;
 }
 
+/* About Me Styles */
 .about-me {
   background-color: #EDE7F6;
 }
@@ -64,6 +69,15 @@ header {
   border-radius: 8px;
 }
 
+.bg-purple {
+  background-color: #CE7DFF;
+}
+
+.text-white {
+  color: #000000;
+}
+
+/* Skills, Projects, and Contact Styles */
 .skills, .projects, .contact {
   background-color: #F3E5F5;
   padding: 4rem 0;
@@ -96,6 +110,7 @@ header {
   font-size: 1rem;
 }
 
+/* Contact Styles */
 .contact {
   background-color: #EDE7F6;
 }
@@ -109,6 +124,7 @@ header {
   background-color: #B39DDB;
 }
 
+/* Footer Styles */
 footer {
   background-color: #D1C4E9;
   padding: 1rem 0;
@@ -116,7 +132,7 @@ footer {
   color: #6D6E76;
 }
 
-/* Modal button style */
+/* Modal Button Styles */
 .btn-primary {
   background-color: #CE7DFF; /* Pastel purple */
   border: none;
@@ -127,5 +143,19 @@ footer {
   color: #FFFFFF; /* White text on hover */
 }
 
+/* Carousel Styles */
+.projects .carousel-item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Ensure the image is responsive */
+}
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black; /* White icon color */
+}
 
+/* Modal Z-Index */
+#exampleModal {
+  z-index: 9999;
+}
