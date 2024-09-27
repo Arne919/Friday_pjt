@@ -5,7 +5,6 @@
 > 관통프로젝트4의 요구사항 pdf에 맞게 진행하였습니다.
 
 startproject mypjt 생성
-
 startapp movies 생성
 
 model class 생성 후 모델필드 3개 지정
