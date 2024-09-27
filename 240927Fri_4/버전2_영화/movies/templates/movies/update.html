@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>영화 수정 페이지</h1>
+  <form action="{% url "movies:update" movie.pk %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% comment %} <div class="mb-3">
+      <label for="title" class="form-label">Title : </label>
+      <input type="text" class="form-control" id="title" name="title" value="{{ movie.title }}">
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description : </label>
+      <textarea class="form-control" id="description" name="description" rows="3">{{ movie.description }}</textarea>
+    </div> {% endcomment %}
+    <button type="submit" class="btn btn-primary">제출</button>
+    <a href="{% url 'movies:detail' movie.pk %}">
+      <button class="btn btn-secondary text-white">
+        BACK
+      </button>
+    </a>
+  </form>
+
+{% endblock content %}

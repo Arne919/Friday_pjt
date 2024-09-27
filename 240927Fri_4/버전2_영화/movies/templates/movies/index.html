@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>메인 페이지</h1>
+  <a href="{% url 'movies:create' %}">☞영화 추가하기☜</a>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for movie in movies %}
+      <div class="col">
+        <div class="card">
+          <h5 class="card-header">{{ movie.title }}</h5>
+          <div class="card-body">
+            <p class="card-text">{{ movie.description }}</p>
+            <a class="text-white" href="{% url "movies:detail" movie.pk %}">
+              <button class="btn btn-primary text-white">
+                Detail
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock content %}
