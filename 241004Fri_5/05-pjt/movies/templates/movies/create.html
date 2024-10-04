@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <h1>CREATE</h1>
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %} {{ form.as_p }}
+
+    <button type="submit" class="btn btn-primary">제출</button>
+    <a href="{% url 'movies:index' %}">
+      <button class="btn btn-secondary text-white">BACK</button>
+    </a>
+  </form>
+</div>
+
+{% endblock content %}

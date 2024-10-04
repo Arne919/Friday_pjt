@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <h1>DETAIL PAGE</h1>
+  {% if movie.image_address %}
+  <img src="{{ movie.image_address.url }}" alt="img" />
+  {% endif %}
+
+  <h3>{{ movie.title }}</h3>
+  <p>{{ movie.description }}</p>
+  <hr />
+  <div style="display: flex; gap: 10px">
+    <a href="{% url 'movies:update' movie.pk %}">
+      <button class="btn btn-secondary text-white">UPDATE</button>
+    </a>
+    <form action="{% url 'movies:delete' movie.pk %}" method="POST">
+      {% csrf_token %}
+      <input class="btn btn-danger" type="submit" value="DELETE" />
+    </form>
+  </div>
+  <hr />
+  <a href="{% url 'movies:index' %}">
+    <button class="btn btn-primary text-white">BACK</button>
+  </a>
+</div>
+{% endblock content %}

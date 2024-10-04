@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h1>UPDATE</h1>
+  <form action="{% url "movies:update" movie.pk %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">제출</button>
+    <a href="{% url 'movies:detail' movie.pk %}">
+      <button class="btn btn-secondary text-white">
+        BACK
+      </button>
+    </a>
+  </form>
+</div>
+{% endblock content %}
